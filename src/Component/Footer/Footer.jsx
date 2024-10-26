@@ -3,7 +3,7 @@ const Footer = () => {
     <div className="pt-64">
       <div className="w-full h-full bg-[#06091A] pt-40">
         <div className="flex justify-center items-center pb-16">
-          <img src="../../../assets/logo-footer.png" alt="" />
+          <img src="../../../public/assets/logo-footer.png" alt="" />
         </div>
         <div className="w-10/12 mx-auto grid grid-cols-3 gap-28 text-white pb-16">
           <div className="pt-5">
