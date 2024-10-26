@@ -1,0 +1,11 @@
+.back-img {
+  background-image: url(../../../assets/bg-shadow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+.btn-clr {
+  border-radius: 12px;
+  box-shadow: inset 4px 4px 20px 0px rgba(245, 161, 43, 0.509);
+  background: url();
+}

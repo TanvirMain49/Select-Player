@@ -3,8 +3,8 @@
 import SelectedPlayer from "./SelectedPlayer";
 
 
-const SelectedPlayers = ({ playerSelections, handleDelete }) => {
-  console.log(playerSelections);
+
+const SelectedPlayers = ({ playerSelections, handleDelete, handleIsActive}) => {
   return (
     <div>
       {playerSelections.map((player, idx) => (
@@ -14,7 +14,9 @@ const SelectedPlayers = ({ playerSelections, handleDelete }) => {
           handleDelete={handleDelete}
         ></SelectedPlayer>
       ))}
-      <button className="bg-[#E7FE29] text-black hover:bg-[#E7FE29] border-[#E7FE29] font-bold btn btn-primary">
+      <button
+        onClick={()=>handleIsActive("Available")}
+        className="bg-[#E7FE29] text-black hover:bg-[#E7FE29] border-[#E7FE29] font-bold btn btn-primary">
         Add Player
       </button>
     </div>

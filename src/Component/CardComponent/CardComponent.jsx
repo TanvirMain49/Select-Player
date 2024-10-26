@@ -35,7 +35,7 @@ const CardComponent = ({players, handleIsActive, isActive, handleChoseBtn, playe
       </div>
         
         {
-          isActive.status?<Players players={players} handleChoseBtn={handleChoseBtn}></Players>:<SelectedPlayers playerSelections={playerSelections} handleDelete={handleDelete}></SelectedPlayers>
+          isActive.status?<Players players={players} handleChoseBtn={handleChoseBtn}></Players>:<SelectedPlayers playerSelections={playerSelections} handleDelete={handleDelete} handleIsActive={handleIsActive}></SelectedPlayers>
         }
 
     </div>

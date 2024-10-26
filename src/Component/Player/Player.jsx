@@ -9,8 +9,8 @@ const Player = ({ player, handleChoseBtn }) => {
 
   return (
     <div>
-      <div id='available-section' className="border space-y-5 p-6 rounded-xl">
-        <img src={imageUrl} alt="" className="max-h-96 w-full rounded-2xl" />
+      <div className="border space-y-5 p-6 rounded-xl">
+        <img src={imageUrl} alt="" className="max-h-96 w-full rounded-2xl " />
 
         <div className="space-y-1">
           {/* Name */}
@@ -52,7 +52,7 @@ const Player = ({ player, handleChoseBtn }) => {
             <h2 className="font-bold">Price: ${price}</h2>
             <button
               onClick={() => handleChoseBtn(player) }
-              className="border-2 p-2 rounded-xl bg-gray-50 font-bold hover:scale-105 hover:transition-all ease-out duration-300"
+              className="border-2 p-2 rounded-xl bg-[#E7FE29] font-bold hover:scale-105 hover:transition-all ease-out duration-300"
             >
               Chose Player
             </button>

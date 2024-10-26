@@ -3,6 +3,10 @@ import "./App.css";
 import Banner from "./Component/Banner/Banner";
 import Navbar from "./Component/Navbar/Navbar";
 import CardComponent from "./Component/CardComponent/CardComponent";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Newsletter from "./Component/Newsletter/Newsletter";
+import Footer from "./Component/Footer/Footer";
 
 function App() {
   // fetch data
@@ -36,13 +40,31 @@ function App() {
   const handleCredit = (addAmount) => {
     let newAmount = amount + addAmount;
     setAmount(newAmount);
-    alert("money added");
+    toast.success('Money added successfully', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      });;
   };
 
   const [playerSelections, setPlayerSelections] = useState([]);
   const handleChoseBtn = (player) => {
     if (Number(amount) < player.price) {
-      alert("Not enough money");
+      toast.warn('Not enough money', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
       return;
     }
 
@@ -50,17 +72,45 @@ function App() {
       (playerId) => playerId.id === player.id
     );
     if (boolCheek) {
-      alert("Player is already added");
+      toast.warn('Player is already added', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
       return;
     }
 
     if (playerSelections.length < 6) {
       const addPlayer = [...playerSelections, player];
       setPlayerSelections(addPlayer);
-      alert("Player Added");
-      setAmount(amount - player.price)
+      toast.success('Player added successfully', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
+      setAmount(amount - player.price);
+
     } else {
-      alert("You can add only 6 player");
+      toast.error('You can add max six player', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
     }
   };
 
@@ -68,6 +118,16 @@ function App() {
     console.log(id);
     const newPlayer = playerSelections.filter((player) => player.id !== id);
     setPlayerSelections(newPlayer);
+    toast.success('Player deleted successfully', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      });
   };
 
   return (
@@ -87,6 +147,17 @@ function App() {
           handleDelete={handleDelete}
         ></CardComponent>
       </main>
+
+      <div className="relative">    
+        <div className="absolute z-10 top-4 left-96 bg-white rounded-2xl">
+        <Newsletter></Newsletter>
+        </div>
+      </div>
+
+      <Footer></Footer>
+
+      
+      <ToastContainer></ToastContainer>
     </>
   );
 }

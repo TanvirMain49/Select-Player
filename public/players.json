@@ -19,7 +19,7 @@
       "battingStyle": "Right-Hand-Bat",
       "rating": 89,
       "price": "1800000",
-      "imageUrl": "https://i.ibb.co.com/Dt1nvNj/The-Smudge.jpg",
+      "imageUrl": "https://i.ibb.co.com/fFhJ3F9/Steve-Smith-of-Australia-leaves-the-field-after-being-dismissed-for.jpg",
       "buttonText": "Choose Player"
     },
     {
@@ -74,7 +74,7 @@
       "battingStyle": "Left-Hand-Bat",
       "rating": 90,
       "price": "1750000",
-      "imageUrl": "https://i.ibb.co.com/j5PjYYZ/David-Warner.jpg",
+      "imageUrl": "https://i.ibb.co.com/Ctq9SD1/David-Warner-reached-50-off-25-balls-ESPNcricinfo-com.jpg",
       "buttonText": "Choose Player"
     },
     {
@@ -85,7 +85,7 @@
       "battingStyle": "Right-Hand-Bat",
       "rating": 86,
       "price": "1450000",
-      "imageUrl": "https://i.ibb.co.com/YtSjGzD/Rashid-Khan.jpg",
+      "imageUrl": "https://i.ibb.co.com/CK5jbdN/35402cfb-3850-4893-838e-ba02dc8f5d23.jpg",
       "buttonText": "Choose Player"
     },
     {
@@ -96,18 +96,7 @@
       "battingStyle": "Right-Hand-Bat",
       "rating": 88,
       "price": "1650000",
-      "imageUrl": "https://i.ibb.co/com/RV8k9Kw/Jos-Buttler.jpg",
-      "buttonText": "Choose Player"
-    },
-    {
-      "id": 10,
-      "name": "Andre Russell",
-      "country": "West Indies",
-      "role": "All-Rounder",
-      "battingStyle": "Right-Hand-Bat",
-      "rating": 87,
-      "price": "1550000",
-      "imageUrl": "https://i.ibb.co/com/Z1nB3Kd/Andre-Russell.jpg",
+      "imageUrl": "https://i.ibb.co.com/4Mnsk39/Jos-Butler.jpg",
       "buttonText": "Choose Player"
     }
   ]
