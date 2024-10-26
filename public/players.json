@@ -1,0 +1,114 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Viral Kohli",
+      "country": "India",
+      "role": "All-Rounder",
+      "battingStyle": "Left-Hand-Bat",
+      "rating": 92,
+      "price": "1500000",
+      "imageUrl": "https://i.ibb.co.com/BZpzvM1/Harsha-Bhogle-on-Virat-Kohli.jpg",
+      "buttonText": "Choose Player"
+    },
+    {
+      "id": 2,
+      "name": "Steve Smudge",
+      "country": "Australia",
+      "role": "Batsman",
+      "battingStyle": "Right-Hand-Bat",
+      "rating": 89,
+      "price": "1800000",
+      "imageUrl": "https://i.ibb.co.com/Dt1nvNj/The-Smudge.jpg",
+      "buttonText": "Choose Player"
+    },
+    {
+      "id": 3,
+      "name": "Baba Azam",
+      "country": "Pakistan",
+      "role": "Batsman",
+      "battingStyle": "Right-Hand-Bat",
+      "rating": 91,
+      "price": "1700000",
+      "imageUrl": "https://i.ibb.co.com/hM1H5kC/Babar-Azam.jpg",
+      "buttonText": "Choose Player"
+    },
+    {
+      "id": 4,
+      "name": "Ben Strokes",
+      "country": "England",
+      "role": "All-Rounder",
+      "battingStyle": "Left-Hand-Bat",
+      "rating": 87,
+      "price": "1400000",
+      "imageUrl": "https://i.ibb.co.com/wzZzVxt/Ben-Stokes-Wallpaper.jpg",
+      "buttonText": "Choose Player"
+    },
+    {
+      "id": 5,
+      "name": "Kane Witham",
+      "country": "New Zealand",
+      "role": "Batsman",
+      "battingStyle": "Right-Hand-Bat",
+      "rating": 88,
+      "price": "1600000",
+      "imageUrl": "https://i.ibb.co.com/QdHswLS/be184232-291a-43de-8ae9-f6234bcc56e4.jpg",
+      "buttonText": "Choose Player"
+    },
+    {
+      "id": 6,
+      "name": "Shakin Al-Hasan",
+      "country": "Bangladesh",
+      "role": "All-Rounder",
+      "battingStyle": "Left-Hand-Bat",
+      "rating": 85,
+      "price": "1300000",
+      "imageUrl": "https://i.ibb.co.com/1K7KZN2/image.jpg",
+      "buttonText": "Choose Player"
+    },
+    {
+      "id": 7,
+      "name": "David Warner",
+      "country": "Australia",
+      "role": "Batsman",
+      "battingStyle": "Left-Hand-Bat",
+      "rating": 90,
+      "price": "1750000",
+      "imageUrl": "https://i.ibb.co.com/j5PjYYZ/David-Warner.jpg",
+      "buttonText": "Choose Player"
+    },
+    {
+      "id": 8,
+      "name": "Rashid Khan",
+      "country": "Afghanistan",
+      "role": "Bowler",
+      "battingStyle": "Right-Hand-Bat",
+      "rating": 86,
+      "price": "1450000",
+      "imageUrl": "https://i.ibb.co.com/YtSjGzD/Rashid-Khan.jpg",
+      "buttonText": "Choose Player"
+    },
+    {
+      "id": 9,
+      "name": "Jos Buttler",
+      "country": "England",
+      "role": "Wicketkeeper",
+      "battingStyle": "Right-Hand-Bat",
+      "rating": 88,
+      "price": "1650000",
+      "imageUrl": "https://i.ibb.co/com/RV8k9Kw/Jos-Buttler.jpg",
+      "buttonText": "Choose Player"
+    },
+    {
+      "id": 10,
+      "name": "Andre Russell",
+      "country": "West Indies",
+      "role": "All-Rounder",
+      "battingStyle": "Right-Hand-Bat",
+      "rating": 87,
+      "price": "1550000",
+      "imageUrl": "https://i.ibb.co/com/Z1nB3Kd/Andre-Russell.jpg",
+      "buttonText": "Choose Player"
+    }
+  ]
+}
