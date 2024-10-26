@@ -2,12 +2,22 @@
 import Players from "../Player/Players";
 import SelectedPlayers from "../SelectedPlayer/SelectedPlayers";
 
-const CardComponent = ({players, handleIsActive, isActive, handleChoseBtn, playerSelections, handleDelete}) => {
- 
+const CardComponent = ({
+  players,
+  handleIsActive,
+  isActive,
+  handleChoseBtn,
+  playerSelections,
+  handleDelete,
+}) => {
   return (
     <div>
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">{isActive.status?`Available`:`Selected Player(${playerSelections.length}/6)`}</h1>
+        <h1 className="text-2xl font-bold">
+          {isActive.status
+            ? `Available`
+            : `Selected Player(${playerSelections.length}/6)`}
+        </h1>
 
         <div className="space-x-3">
           <button
@@ -33,11 +43,16 @@ const CardComponent = ({players, handleIsActive, isActive, handleChoseBtn, playe
           </button>
         </div>
       </div>
-        
-        {
-          isActive.status?<Players players={players} handleChoseBtn={handleChoseBtn}></Players>:<SelectedPlayers playerSelections={playerSelections} handleDelete={handleDelete} handleIsActive={handleIsActive}></SelectedPlayers>
-        }
 
+      {isActive.status ? (
+        <Players players={players} handleChoseBtn={handleChoseBtn}></Players>
+      ) : (
+        <SelectedPlayers
+          playerSelections={playerSelections}
+          handleDelete={handleDelete}
+          handleIsActive={handleIsActive}
+        ></SelectedPlayers>
+      )}
     </div>
   );
 };

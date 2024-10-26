@@ -10,8 +10,16 @@ const Newsletter = () => {
             Get the latest updates and news right in your inbox!
           </p>
           <div className="flex gap-4 mt-4">
-            <input type="text" name="" id="" placeholder="Enter your email" className="py-2 pl-2 pr-16 border-2 rounded-xl w-full"/>
-            <button className="bg-gradient-to-r from-red-400 to-orange-300 p-4 font-bold rounded-xl">Subscribe</button>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Enter your email"
+              className="py-2 pl-2 pr-16 border-2 rounded-xl w-full"
+            />
+            <button className="bg-gradient-to-r from-red-500 to-orange-400 p-4 font-bold rounded-xl">
+              Subscribe
+            </button>
           </div>
         </div>
       </div>

@@ -40,7 +40,7 @@ function App() {
   const handleCredit = (addAmount) => {
     let newAmount = amount + addAmount;
     setAmount(newAmount);
-    toast.success('Money added successfully', {
+    toast.success("Money added successfully", {
       position: "top-center",
       autoClose: 5000,
       hideProgressBar: false,
@@ -49,13 +49,13 @@ function App() {
       draggable: true,
       progress: undefined,
       theme: "colored",
-      });;
+    });
   };
 
   const [playerSelections, setPlayerSelections] = useState([]);
   const handleChoseBtn = (player) => {
     if (Number(amount) < player.price) {
-      toast.warn('Not enough money', {
+      toast.warn("Not enough money", {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -64,7 +64,7 @@ function App() {
         draggable: true,
         progress: undefined,
         theme: "colored",
-        });
+      });
       return;
     }
 
@@ -72,7 +72,7 @@ function App() {
       (playerId) => playerId.id === player.id
     );
     if (boolCheek) {
-      toast.warn('Player is already added', {
+      toast.error("Player is already added", {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -81,14 +81,14 @@ function App() {
         draggable: true,
         progress: undefined,
         theme: "colored",
-        });
+      });
       return;
     }
 
     if (playerSelections.length < 6) {
       const addPlayer = [...playerSelections, player];
       setPlayerSelections(addPlayer);
-      toast.success('Player added successfully', {
+      toast.success("Player added successfully", {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -97,11 +97,10 @@ function App() {
         draggable: true,
         progress: undefined,
         theme: "colored",
-        });
+      });
       setAmount(amount - player.price);
-
     } else {
-      toast.error('You can add max six player', {
+      toast.error("You can add max six player", {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -110,7 +109,7 @@ function App() {
         draggable: true,
         progress: undefined,
         theme: "colored",
-        });
+      });
     }
   };
 
@@ -118,7 +117,7 @@ function App() {
     console.log(id);
     const newPlayer = playerSelections.filter((player) => player.id !== id);
     setPlayerSelections(newPlayer);
-    toast.success('Player deleted successfully', {
+    toast.error("Player deleted successfully", {
       position: "top-center",
       autoClose: 5000,
       hideProgressBar: false,
@@ -127,7 +126,7 @@ function App() {
       draggable: true,
       progress: undefined,
       theme: "colored",
-      });
+    });
   };
 
   return (
@@ -148,15 +147,14 @@ function App() {
         ></CardComponent>
       </main>
 
-      <div className="relative">    
-        <div className="absolute z-10 top-4 left-96 bg-white rounded-2xl">
-        <Newsletter></Newsletter>
+      <div className="relative">
+        <div className="absolute z-10 top-16 left-96 bg-white rounded-2xl">
+          <Newsletter></Newsletter>
         </div>
       </div>
 
       <Footer></Footer>
 
-      
       <ToastContainer></ToastContainer>
     </>
   );

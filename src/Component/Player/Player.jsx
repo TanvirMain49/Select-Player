@@ -3,9 +3,7 @@ import { CgProfile } from "react-icons/cg";
 import { IoFlagSharp } from "react-icons/io5";
 
 const Player = ({ player, handleChoseBtn }) => {
-
-  const { imageUrl, name, country, battingStyle, rating, price, role,} =
-    player;
+  const { imageUrl, name, country, battingStyle, rating, price, role } = player;
 
   return (
     <div>
@@ -51,7 +49,7 @@ const Player = ({ player, handleChoseBtn }) => {
           <div className="flex items-center justify-between py-3">
             <h2 className="font-bold">Price: ${price}</h2>
             <button
-              onClick={() => handleChoseBtn(player) }
+              onClick={() => handleChoseBtn(player)}
               className="border-2 p-2 rounded-xl bg-[#E7FE29] font-bold hover:scale-105 hover:transition-all ease-out duration-300"
             >
               Chose Player
