@@ -1,8 +1,19 @@
-# React + Vite
+# Project Name: Player Selection App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+A React application that allows users to select players based on available coins. Users can view available players, choose players, manage their selections, and remove selected players effectively.
 
-Currently, two official plugins are available:
+## Technologies Used
+- React
+- React-Toastify
+- CSS
+- JSON
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
+1. **Navbar**: Displays the user's money, initialized to 0.
+2. **Player Selection**: Choose players and manage selected players with validations.
+3. **Remove Selected Players**: Users can remove players from their selection.
+
+## Live Demo
+You can view the live version of the application [here](https://grateful-cactus.surge.sh/).
+
