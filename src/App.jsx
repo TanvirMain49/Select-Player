@@ -162,8 +162,4 @@ function App() {
 
 export default App;
 
-//        <div>
-// {
-//   selectPlayers.map((player,idx)=> <SelectedPlayer key={idx} player={player}></SelectedPlayer>)
-// }
-// </div>
+

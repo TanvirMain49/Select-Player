@@ -6,7 +6,7 @@ const Navbar = ({amount}) => {
         <div className="flex justify-between items-center py-6">
             {/* img section start*/}
             <div>
-                <img src="../../../public/assets/logo.png" alt="" />
+                <img src="/assets/logo.png" alt="" />
             </div>
             {/* img section end */}
 
